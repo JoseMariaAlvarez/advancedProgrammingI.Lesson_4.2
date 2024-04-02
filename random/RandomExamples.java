@@ -12,7 +12,7 @@ public class RandomExamples {
 		return data;
 	}
 
-	public static int [] ExampleRandom2(int nelms) {
+	public static int [] RandomExample2(int nelms) {
 		Random rnd = new Random();
 		int []data = new int[nelms];
 		for (int i = 0; i < data.length; ++i) {
@@ -42,15 +42,29 @@ public class RandomExamples {
 	}
 
 		public static void main(String args[]) {
-			int [] firstRandom = RandomExamples.ExampleRandom2(10);
+			int [] firstRandom = RandomExamples.RandomExample1(10);
 			for (int i: firstRandom) {
 				System.out.print(i + ", ");
 			}
 			System.out.println("");
-			int [] secondRandom = RandomExamples.RandomExample3(10);
+			
+			int [] secondRandom = RandomExamples.RandomExample2(10);
 			for (int i: secondRandom) {
 				System.out.print(i + ", ");
 			}
+			System.out.println("");
+			
+			int [] thirdRandom = RandomExamples.RandomExample3(10);
+			for (int i: thirdRandom) {
+				System.out.print(i + ", ");
+			}
+			System.out.println("");
+			
+			double [] fourthRandom = RandomExamples.RandomExample4(10);
+			for (double i: fourthRandom) {
+				System.out.print(i + ", ");
+			}
+			System.out.println("");
 		}
 
 }
